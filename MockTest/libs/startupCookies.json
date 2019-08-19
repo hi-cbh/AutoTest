@@ -1,0 +1,37 @@
+[
+  {
+    "description":"模拟一个cookies的get请求",
+    "request":{
+      "uri":"/getDemoCookies",
+      "method":"get",
+      "cookies":{
+        "login":"true"
+      }
+    },
+
+    "response":{
+      "text":"这是个cookies的get请求"
+    }
+  },
+  {
+    "description":"模拟带一个cookies的post请求",
+    "request":{
+      "uri":"/postDemoCookies",
+      "method":"post",
+      "json":{
+        "name":"chen",
+        "age": "99"
+      },
+      "cookies":{
+        "login":"true"
+      }
+    }
+    ,"response":{
+      "status":200,
+      "json":{
+        "text":"这是一个cookies的post请求",
+        "status":200
+      }
+    }
+  }
+]

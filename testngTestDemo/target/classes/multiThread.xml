@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+test级别：不同的test tag下的用例可以在不同的线程中执行。
+        相同的test tag 下的用例只能砸同一线程中去执行
+
+class级别：相同的Class tag下的用例在同一个线程中执行
+
+methods 级别所有用例都厄运在不同线程下执行
+
+
+-->
+<suite name="thread">
+    <test name="demo1" parallel="methods" thread-count="2">
+        <classes>
+            <class name="com.demo.testng.multiThread.multiThread" />
+
+        </classes>
+
+    </test>
+
+
+</suite>
